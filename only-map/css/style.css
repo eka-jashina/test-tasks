@@ -1,0 +1,231 @@
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+/* glob */
+
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial');
+  src: url('../fonts/ArialMT.woff2');
+  src: url('../fonts/ArialMT.woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+body {
+  margin: 0 auto;
+	font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* map */
+
+.map {
+  position: relative;
+}
+
+.map__list {
+  width: 1920px;
+  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 15, 32, 0.4)), to(rgba(2, 15, 32, 0.4))), url('../img/content/map.webp');
+  background: -o-linear-gradient(rgba(2, 15, 32, 0.4), rgba(2, 15, 32, 0.4)), url('../img/content/map.webp');
+  background: linear-gradient(rgba(2, 15, 32, 0.4), rgba(2, 15, 32, 0.4)), url('../img/content/map.webp');
+}
+
+.map__item {
+  position: absolute;
+}
+
+.map__button {
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.green {
+  background-color: rgba(186, 191, 75, 0.7);
+}
+
+.green.map__button--open {
+  background-color: rgba(186, 191, 75, 1);
+}
+
+.blue {
+  background-color: rgba(56, 119, 238, 0.7);
+}
+
+.blue.map__button--open {
+  background-color: rgba(56, 119, 238, 1);
+}
+
+.map__button--open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding: 10px 15px;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+}
+
+.button__icon {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.button__icon::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  left: 40%;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.button__icon::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 10px;
+  top: 40%;
+  background-color: #fff;
+} 
+
+.map__button--open .button__icon::after {
+  margin-right: 15px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.housing-complex {
+  top: 180px;
+  left: 1430px;
+}
+
+.industrial-enterprise {
+  top: 280px;
+  left: 580px;
+}
+
+.metro {
+  top: 410px;
+  left: 1150px;
+}
+
+.cafe {
+  top: 480px;
+  left: 1450px;
+}
+
+.stadium {
+  top: 500px;
+  left: 700px;
+}
+
+.box-office {
+  top: 650px;
+  left: 1100px;
+}
+
+.dormitory {
+  top: 680px;
+  left: 1300px;
+}
+
+.parking {
+  top: 700px;
+  left: 430px;
+}
+
+.supermarket {
+  top: 710px;
+  left: 1600px;
+}
+
+.underpass {
+  top: 800px;
+  left: 1100px;
+}
+
+
+
+
+
+
+
